@@ -1,0 +1,21 @@
+{
+  "name": "learning-mocha",
+  "version": "1.0.0",
+  "description": "Teaching myself unit testing with Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mocha",
+    "unit",
+    "testing",
+    "javaScript",
+    "front-end"
+  ],
+  "author": "Nick Miloscia",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.1.2"
+  }
+}
