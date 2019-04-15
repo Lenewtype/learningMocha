@@ -1,5 +1,6 @@
 const assert = require('assert');
 const operations = require('./operations.js');
+const loginController = require('./loginController.js');
 
 it('correctly calculates the sum of 1 and 3', ()=> {
 	assert.equal(operations.add(1, 3), 4);
@@ -39,4 +40,12 @@ it('indicates failure when two strings is used instead of numbers', () => {
 
 it('successfully runs when two numbers are used', () => {
 	assert.equal(operations.validateNumbers(5, 5), true);
+});
+
+
+it('should return true if a valid user id was found', (done) => {
+	loginController.isValidUserId(['abc123', 'xxx6969'], 'abc123', function(isValid) {
+		assert.equal(isValid, true);
+		done();
+	});
 });
